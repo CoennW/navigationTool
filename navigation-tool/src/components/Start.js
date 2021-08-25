@@ -2,7 +2,12 @@ import React from "react";
 import {Box, Typography, Button } from '@material-ui/core';
 import { Paper } from '@material-ui/core';
 
-const Start = () => {
+const Start = (props) => {
+
+    const handleClickProceed = () => {
+        props.changeSection('next');
+    }
+
 
     return (
     <Box mt={3} >
@@ -27,7 +32,7 @@ const Start = () => {
           Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
           </Box>
           
-            <Button onClick={() => { alert('clicked') }} variant="contained" color="primary">
+            <Button onClick={handleClickProceed} variant="contained" color="primary">
               Start Navigation Tool
             </Button>
    
