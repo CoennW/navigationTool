@@ -43,26 +43,16 @@ const Step1 = (props) => {
           </Box>
 
           <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
-          Are the following two objectives relevant or becoming relevant for you?
+          Do you have a need for interventions concerning the general process design for the MPI? 
 
           </Box>
          
-          <List>
-             
-             <ListItem style={{flexDirection: 'column', alignItems: 'flex-start'}}>
-               <ListItemText primary="- to minimize the perceptual distance between potential partners."/>
-               <ListItemText primary="- to maximize the chance for success with low toll for participants."/>
-             </ListItem>
-           
-         </List>
-          
-         
       
           <div className={classes.root}>
-                <Button name="btn1" value="section2" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                <Button name="btn1" value="section7" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
                     Yes
                 </Button>
-                <Button name="btn2" style={{marginLeft:'20px'}} value="noRelevance" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                <Button name="btn2" style={{marginLeft:'20px'}} value="section16" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
                     No
                 </Button>
            </div>           

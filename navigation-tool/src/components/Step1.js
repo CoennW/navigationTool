@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
     },
   }));
 
-const Step1 = () => {
+const Step1 = (props) => {
 
     const classes = useStyles();
 
@@ -50,7 +50,11 @@ const Step1 = () => {
 
       const handleClickProceed = (event) => {
         let exists = Object.values(state).some(val => val === true);
-        alert(exists);
+        if(exists){
+          props.changeSection('section1');
+        } else {
+          // nothing
+        }
       };
     
       const { one, two, three, four, five, six, seven, eight, nine,  } = state;

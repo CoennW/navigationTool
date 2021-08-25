@@ -5,7 +5,7 @@ import { Paper } from '@material-ui/core';
 const Start = (props) => {
 
     const handleClickProceed = () => {
-        props.changeSection('next');
+        props.changeSection('step1');
     }
 
 
