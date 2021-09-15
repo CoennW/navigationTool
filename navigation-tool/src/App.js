@@ -10,6 +10,13 @@ import Section4 from './components/Section4';
 import Section5 from './components/Section5';
 import Section6 from './components/Section6';
 import Section7 from './components/Section7';
+import Section8 from './components/Section8';
+import Section9 from './components/Section9';
+import SectionI from './components/SectionI';
+import Section11 from './components/Section11';
+import Section12 from './components/Section12';
+import Section13 from './components/Section13';
+
 import NoRelevance from './components/NoRelevance';
 import { useState } from 'react';
 
@@ -20,7 +27,7 @@ import { Container,  CssBaseline } from '@material-ui/core';
 
 
 
-
+ 
 function App() {
 
  
@@ -29,7 +36,7 @@ function App() {
 
     let makeActive;
     
-    switch(newSection) {
+    switch('section13') {
       case 'start':
         makeActive = <Start changeSection={changeSection}/>
         break;
@@ -59,12 +66,31 @@ function App() {
         break;
       case 'section7':
         makeActive = <Section7 changeSection={changeSection}/>
-        break;  
+        break;
+        case 'section8':
+        makeActive = <Section8 changeSection={changeSection}/>
+        break;
+      case 'section9':
+        makeActive = <Section9 changeSection={changeSection}/>
+        break;
+        case 'section11':
+        makeActive = <Section11 changeSection={changeSection}/>
+        break;
+        case 'section12':
+        makeActive = <Section12 changeSection={changeSection}/>
+        break;
+        case 'section13':
+        makeActive = <Section13 changeSection={changeSection}/>
+        break;
+      
+      case 'sectionI':
+        makeActive = <SectionI changeSection={changeSection}/>
+        break; 
       default:
         makeActive = <Start changeSection={changeSection} />
         break;
     }
-
+    
       setActiveSection(makeActive);
       
   }
@@ -89,3 +115,4 @@ function App() {
 }
 
 export default App;
+

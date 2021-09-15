@@ -39,7 +39,7 @@ const Step1 = (props) => {
         <Box p={3}>
           
           <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Question 1
+          Question 6
           </Box>
 
           <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">

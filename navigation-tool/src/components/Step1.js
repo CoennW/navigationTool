@@ -53,7 +53,7 @@ const Step1 = (props) => {
         if(exists){
           props.changeSection('section1');
         } else {
-          // nothing
+          props.changeSection('noRelevance');
         }
       };
     
@@ -83,39 +83,39 @@ const Step1 = (props) => {
           <div className={classes.checkbox}>
             <FormControl style={{marginLeft:"5px"}} component="fieldset" className={classes.formControl}>
                 <FormGroup>
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={one} onChange={handleChange} name="one" />}
                     label="There are several notions of the direction in which the solution may be found."
                 />
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={two} onChange={handleChange} name="two" />}
                     label="Multiple parties are involved, which may be organized slightly informally. "
                 />
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={three} onChange={handleChange} name="three" />}
                     label="The parties agree that there is a – possibly recurring – problem/opportunity."
                 />
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={four} onChange={handleChange} name="four" />}
                     label="Individual parties are unable to realize a solution. "
                 />
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={five} onChange={handleChange} name="five" />}
                     label="The intentions, and therefore also the interests, of the stakeholders vary."
                 />
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={six} onChange={handleChange} name="six" />}
                     label="The participants regard the initiative as risky. "
                 />
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={seven} onChange={handleChange} name="seven" />}
                     label="There are internal debates in participating organizations about subjects which are relevant for the initiative."
                 />
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={eight} onChange={handleChange} name="eight" />}
                     label="In de partnering organizations, some of the managers are highly critical of solutions realized elsewhere."
                 />
-                <FormControlLabel
+                <FormControlLabel style={{marginTop:'10px'}}
                     control={<Checkbox checked={nine} onChange={handleChange} name="nine" />}
                     label="There is no one responsible for a process design of the initiative."
                 />

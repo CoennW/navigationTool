@@ -8,7 +8,7 @@ import { Paper, Divider, List, ListItem, ListItemText } from '@material-ui/core'
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
-        margin: '20px 0px',
+        margin: '20px 0px 0px 0px',
       },
       
     },
@@ -38,16 +38,16 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box textAlign="left"  fontWeight="400">
           Question 1
           </Box>
 
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
+          <Box fontWeight="800" textAlign="left" fontSize="h5.fontSize">
           Are the following two objectives relevant or becoming relevant for you?
 
           </Box>
-         
-          <List>
+         <Box borderRadius='5px' p={1} component="p" textAlign="left" bgcolor="#FAF2F3">
+          <List >
              
              <ListItem style={{flexDirection: 'column', alignItems: 'flex-start'}}>
                <ListItemText primary="- to minimize the perceptual distance between potential partners."/>
@@ -56,8 +56,8 @@ const Step1 = (props) => {
            
          </List>
           
-         
-      
+         </Box> 
+          
           <div className={classes.root}>
                 <Button name="btn1" value="section2" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
                     Yes

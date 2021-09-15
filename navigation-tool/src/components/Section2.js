@@ -8,7 +8,7 @@ import { Paper, Divider, List, ListItem, ListItemText } from '@material-ui/core'
 const useStyles = makeStyles((theme) => ({
     root: {
       '& > *': {
-        margin: '20px 0px',
+        marginTop: '40px',
       },
       
     },
@@ -32,17 +32,17 @@ const Step1 = (props) => {
     
        
       
-    <Box mt={3} >
+    <Box mt={5} >
     <Paper  elevation={3} >
 
       <Typography component="div">
-        <Box p={3}>
+        <Box p={5}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box textAlign="left"  fontWeight="400">
           Question 2
           </Box>
 
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
+          <Box fontWeight="800" textAlign="left" fontSize="h5.fontSize">
           Do you have (hardly) no restrictions concerning completion time or the number of parties now? 
 
           </Box>

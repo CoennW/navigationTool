@@ -26,7 +26,6 @@ const Step1 = (props) => {
 
     const handleClickProceed = (event) => {
         let value = event.currentTarget.value;
-        console.log(value);
         props.changeSection(value);
       };
     
@@ -43,10 +42,18 @@ const Step1 = (props) => {
         <Box p={3}>
           
           <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          First set general interventions.
+          Indirect supporting interventions.
           </Box>
 
           <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
+          <ol>
+            <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
+            <li>provide the key-participants a learning module about IPA so they become aware of the essentials of IPA leading to shared view on tools and outcomes</li>
+            <li>give Support of parent organizations, Idea description and Fit with objectives emphasis in the beginning leading to motivation to develop ideas about Cooperation, Coordination, Partitioning of work and Integration with parent organizations later. </li>
+            <li>begin to work on trust immediately leading to positive (inter-organizational) collaborative behaviour. If relevant go to Section 15 for concrete interventions</li>
+            <li>propose a set of initiating activities leading to support for follow up activities. If relevant go to Section 16 for concrete interventions</li>
+            <li>make an inventory of what is already available at the current parties as input for or interpretation of the viability components leading to a shared view of (maybe different) starting points.</li>
+          </ol> 
           <ol>
             <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
             <li>provide the key-participants a learning module about IPA so they become aware of the essentials of IPA leading to shared view on tools and outcomes</li>
@@ -65,7 +72,7 @@ const Step1 = (props) => {
           its first set of activities and goes on in the Inception phase. 
           </Box>
          
-          	
+      
           {/* <div className={classes.root}>
                 <Button name="btn1" value="section7" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
                     Yes
