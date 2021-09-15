@@ -38,15 +38,14 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Question 4
-          </Box>
-
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
-          Do you have restrictions concerning completion time now?  
-
-          </Box>
          
+          <Typography variant="subtitle2">
+          Question 4
+          </Typography>
+
+          <Typography variant="h6" >
+          Do you have restrictions concerning completion time now?
+          </Typography>
          
          
       

@@ -41,29 +41,108 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box textAlign="left" fontSize="h5.fontSize" fontWeight="bold">
           Indirect supporting interventions.
           </Box>
 
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
-          <ol>
-            <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
-            <li>provide the key-participants a learning module about IPA so they become aware of the essentials of IPA leading to shared view on tools and outcomes</li>
-            <li>give Support of parent organizations, Idea description and Fit with objectives emphasis in the beginning leading to motivation to develop ideas about Cooperation, Coordination, Partitioning of work and Integration with parent organizations later. </li>
-            <li>begin to work on trust immediately leading to positive (inter-organizational) collaborative behaviour. If relevant go to Section 15 for concrete interventions</li>
-            <li>propose a set of initiating activities leading to support for follow up activities. If relevant go to Section 16 for concrete interventions</li>
-            <li>make an inventory of what is already available at the current parties as input for or interpretation of the viability components leading to a shared view of (maybe different) starting points.</li>
-          </ol> 
-          <ol>
-            <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
-            <li>provide the key-participants a learning module about IPA so they become aware of the essentials of IPA leading to shared view on tools and outcomes</li>
-            <li>give Support of parent organizations, Idea description and Fit with objectives emphasis in the beginning leading to motivation to develop ideas about Cooperation, Coordination, Partitioning of work and Integration with parent organizations later. </li>
-            <li>begin to work on trust immediately leading to positive (inter-organizational) collaborative behaviour. If relevant go to Section 15 for concrete interventions</li>
-            <li>propose a set of initiating activities leading to support for follow up activities. If relevant go to Section 16 for concrete interventions</li>
-            <li>make an inventory of what is already available at the current parties as input for or interpretation of the viability components leading to a shared view of (maybe different) starting points.</li>
-          </ol> 
+          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Section I.1: helping initiation
+          </Box>
+          
+
+          <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
+          <ul>
+            <li>•	create a real safe environment, even if the possibility for exit is arranged leading to better cooperation</li>
+            <li>•	use visualization, ethnography, collaborative sensemaking, assumption surfacing or field experiments to formulate objectives/ideas leading to leverage of differences </li>
+            <li>•	organize network meetings leading to invitation of the best participants</li>
+          </ul> 
 
           </Box>
+          
+          <br/>
+
+          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Section I.2: helping identification
+          </Box>
+          
+
+          <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
+          <ul>
+            <li>make sure that participants share ‘a dream’ leading to getting along</li>
+            <li>let parties meet informally leading to better cooperation</li>
+            <li>bring competences for creating a MPI on board preventing wrong items in this precontractual phase</li>
+            <li>use methods as mental simulation or benefit comparison leading to support for collaboration with these parties</li>
+            <li>show a problem caused by an outside party leading to focus within the group</li>
+            <li>obtain references from a third party (assumption: when a party had prior dealings with a potential partner for the MPI) explicit experiences help to assess future support</li>
+            <li>circumvent tendering by creation of collaboration contracts leading to optimalization instead of sub-optimalization and hierarchy</li>
+          </ul> 
+
+          </Box>
+          
+          <br/>
+
+          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Section I.3: helping exchange
+          </Box>
+          
+
+          <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
+          <ul>
+            <li>•	promote initial face to face contacts and shared cyber spaces leading to openness</li>
+            <li>•	organize the learnings through accessible files leading to progressive insight for all</li>
+            <li>•	use customer visit teams, lead user analysis or focus groups to enrich the market/performance aspect of the idea leading to common formulations</li>
+            <li>•	let no one party gets the biggest influence on the development leading to weakening ties of that party with the other parties</li>
+            <li>•	introduce a rule that everybody can step out without sanction leading to relaxed presence</li>
+            <li>•	make the professionalism of parties visible leading to speed in activities</li>
+            <li>•	create a platform with residents (breakfast session, workshop, exploring meeting, idea generation) leading to higher support</li>
+            <li>•	organize communication outside-in leading to positive image of the MPI</li>
+            <li>•	beware for longing for formalization and details leading to spending a lot of indirect hours</li>
+            <li>•	install a learning attitude combined with a written learning history leading to sharing of new discoveries and insights</li>
+            <li>•	make launching customer act as informal principal leading to common focus</li>
+          </ul> 
+
+          </Box>
+          
+          <br/>
+
+          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Section I.4: helping exchange
+          </Box>
+          
+
+          <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
+          <ul>
+            <li>speak out about clashes leading to go on when it gets rough</li>
+            <li>point at concurrent initiatives leading to enrichment of the MPI</li>
+            <li>work with a visualized idea leading to synchronization and an equal starting point for next activities</li>
+            <li>use methods as imagery, storytelling, metaphors, analogies and assumption surfacing leading to new enrichments</li>
+            <li>stretch from technology to market model (assumption: because this makes volume, development in raw materials etc. explicit) leading to realistic enrichment</li>
+            <li>formulate abstract business case and cost estimates leading to realistic enrichment</li>
+          </ul> 
+
+          </Box>
+          
+          <br/>
+
+          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Section I.5: helping exchange
+          </Box>
+          
+
+          <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
+          <ul>
+            <li>formulate the relation of objectives and the idea of the MPI in the Intention Agreement (assumption: because this explicates the interests of participants) leading to taking each other in account</li>
+            <li>make go/no-go at a kind of Idea gate formally leading to serious support</li>
+          </ul> 
+
+          </Box>
+          
+          <br/>
+
+
+
+
+
 
           <Box>
           After the (selection of the) above interventions are finished, 

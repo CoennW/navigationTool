@@ -37,7 +37,7 @@ function App() {
 
     let makeActive;
     
-    switch('section20') {
+    switch(newSection) {
         case 'start':
         makeActive = <Start changeSection={changeSection}/>
         break;
@@ -114,12 +114,10 @@ function App() {
         makeActive = <SectionI changeSection={changeSection}/>
         break; 
       default:
-        makeActive = <Start changeSection={changeSection} />
+        makeActive = activeSection;
         break;
     }
-    
-      setActiveSection(makeActive);
-      
+      setActiveSection(makeActive); 
   }
 
   const [activeSection, setActiveSection] = useState(<Start changeSection={changeSection}/>);
@@ -127,7 +125,7 @@ function App() {
   return ( 
     <div className="App">      
 
-              <Menu />
+              <Menu  changeSection={changeSection} />
         <Container maxWidth="md">
       
         {activeSection}

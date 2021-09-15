@@ -70,13 +70,13 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+        <Typography variant="subtitle2">
           Step 1
-          </Box>
+          </Typography>
 
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
+          <Typography variant="h6" >
             Do you want suggestions for activities for the start of an initiative with several parties and do you recognize some or more of the following characteristics?
-          </Box>
+          </Typography>
             
           
           

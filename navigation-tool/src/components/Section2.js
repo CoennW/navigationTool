@@ -38,14 +38,13 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={5}>
           
-          <Box textAlign="left"  fontWeight="400">
+          <Typography variant="subtitle2">
           Question 2
-          </Box>
+          </Typography>
 
-          <Box fontWeight="800" textAlign="left" fontSize="h5.fontSize">
-          Do you have (hardly) no restrictions concerning completion time or the number of parties now? 
-
-          </Box>
+          <Typography variant="h6" >
+          Do you have (hardly) no restrictions concerning completion time or the number of parties now?
+          </Typography>
          
         
          

@@ -64,9 +64,11 @@ const Step1 = (props) => {
           With no real deadlines the emphasis is on the quality of the process and the outcome but with a very selected set of parties. The Cloister Lane accepts risks in viability of cooperation, coordination, partitioning of the work and specialized tasks for integration with parent organizations. 
           </Box>
           
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
-            <p>Set general interventions</p>
-            <ul>
+          <Typography variant="h6">
+          <p>Set general interventions</p>
+          </Typography>
+          <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
+           <ul>
               <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
               <li>put the seven criteria of viability on the agenda of the Inception phase leading to a best viability assessment</li>
               <li>give Support of parent organizations, Fit with objectives and Idea description emphasis in the beginning leading to motivation to develop ideas about Cooperation, Coordination, Partitioning of work and Communication with parent organizations</li>
@@ -79,7 +81,10 @@ const Step1 = (props) => {
 
           </Box>
 
-          <p>Pre-sorted set direct interventions for the Cloister Lane </p>
+          <Typography variant="h6">
+          <p>Set direct interventions for The Cloister Lane</p>
+          </Typography>
+         
             <AppBar position="relative">
                   <Tabs value={value}  onChange={handleTabs} scrollButtons="auto" variant="scrollable">
                     <Tab label="Support"></Tab>

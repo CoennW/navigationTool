@@ -62,9 +62,12 @@ const Step1 = (props) => {
           <Box>
           In the case of the circus lane there is not much time available, but all persons/parties may ‘perform’ with others ‘in the public’. The Circus Lane accepts risks in viability of the idea, cooperation and partitioning of the work. All the necessary interventions for the Circus Lane are pre-sorted in this section.
           </Box>
-          
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
-            <p>Set general interventions</p>
+
+          <Typography variant="h6">
+          <p>Set general interventions</p>
+          </Typography>
+           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
+            
             <ul>
               <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
               <li>put the seven criteria of viability on the agenda of the Inception phase leading to a best viability assessment</li>
@@ -76,7 +79,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <p>Set direct interventions for the Circus Lane</p>
+          <Typography variant="h6">
+          <p>Set direct interventions for The Circus Lane</p>
+          </Typography>
             <AppBar position="relative">
                   <Tabs value={value}  onChange={handleTabs} scrollButtons="auto" variant="scrollable">
                     <Tab label="Support"></Tab>
@@ -91,7 +96,7 @@ const Step1 = (props) => {
                 </AppBar>
                 <Box minHeight="400px">
                 <TabPanel value={value} index={0}>
-                 <p>Support</p>
+                
                   <ul>
                     <li>check the selection of (new) parties preventing use of wrong criteria</li>
                     <li>invite many parties with useful qualities facilitating a transformation from attendee to supporter</li>
@@ -106,7 +111,6 @@ const Step1 = (props) => {
                   </ul>  
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                   <p>Idea and it’s characteristics</p>
                     <ul>
                       <li>invite users in an early stage leading to participants that are realistic about the idea</li>
                       <li>ask around at universities (assumption: because publications show persons with in-dept knowledge) leading to good selection</li>
@@ -115,7 +119,6 @@ const Step1 = (props) => {
                     </ul>  
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                <p>Fit with objectives</p>
                   <ul>
                     <li>invite organizations to enter the MPI to focus on efficiency benefits</li>
                     <li>put own objectives or problems on the agenda of start-up meeting leading to starting points about conditions for participation and of mutual views of participants’ contributions</li>
@@ -126,7 +129,6 @@ const Step1 = (props) => {
                   </ul> 
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                <p>Cooperation next phase(s)</p>
                   <ul>
                   	<li>combine organizational strengths leading to competitive advantages </li>
                     <li>make an inventory of competences and needs of parties leading to good arrangements to cooperate </li>
@@ -137,7 +139,6 @@ const Step1 = (props) => {
                   </ul> 
                 </TabPanel>
                 <TabPanel value={value} index={4}>
-                <p>Coordination of next phase(s)</p>
                   <ul>
                     <li>use non-binding contracts leading a basis for interpersonal trust</li>
                     <li>start immediately with building trust preventing excessive contractual formality </li>
@@ -155,14 +156,12 @@ const Step1 = (props) => {
                   </ul> 
                 </TabPanel>
                 <TabPanel value={value} index={5}>
-                <p>Partitioning of work</p>
                 <ul>
                   <li>make sure to synchronize actions of partners leading continuously to joint starting points</li>
                   <li>transfer own work protocols to work packages and common tools to all participants because it supports action and interaction leading to higher ties of participants</li>
                 </ul>
                 </TabPanel>
                 <TabPanel value={value} index={6}>
-                <p>Specialized tasks for integration</p>
                 <ul>
                   <li>in case of subsidy ask also the same amount of parties’ responsibles (assumption: because it explicates the willingness) leading to first selection criterion between parties</li>
                   <li>use confirmation, selection, transformation, toleration or non-confirmation as tactics leading to a fit in the parent organizations </li>
@@ -172,7 +171,6 @@ const Step1 = (props) => {
                 </ul>
                 </TabPanel>
                 <TabPanel value={value} index={7}>
-                <p>Set indirect interventions</p>
                 <ul>
                   <li>use boundary crossing activities leading to facilitation of mutual learning (general)</li>
                   <li>use visualization, ethnography, collaborative sensemaking, assumption surfacing, field experiments to formulate objectives/ideas leading to leverage of differences (initiation)</li>
@@ -205,7 +203,7 @@ const Step1 = (props) => {
                 </Button>
            </div>   */}
 
-         <Box style={{marginTop: '20px', display: 'flex', justifyContent: 'space-between'}}>
+         {/*<Box style={{marginTop: '20px', display: 'flex', justifyContent: 'space-between'}}>
           <a style={{textDecoration: 'none'}} href="../downloads/First_general_interventions.pdf" download="First Set General Interventions" target="_blank">
            <Fab  variant="extended" color="primary" >
               <CloudDownloadIcon style={{marginRight: '10px'}}/>
@@ -216,7 +214,7 @@ const Step1 = (props) => {
 
 
 
-          </Box>     
+          </Box>*/ }    
               
         </Box>
       </Typography>

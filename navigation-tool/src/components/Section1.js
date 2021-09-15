@@ -38,14 +38,14 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left"  fontWeight="400">
+        <Typography variant="subtitle2">
           Question 1
-          </Box>
+          </Typography>
 
-          <Box fontWeight="800" textAlign="left" fontSize="h5.fontSize">
+          <Typography variant="h6" >
           Are the following two objectives relevant or becoming relevant for you?
-
-          </Box>
+          </Typography>
+          
          <Box borderRadius='5px' p={1} component="p" textAlign="left" bgcolor="#FAF2F3">
           <List >
              

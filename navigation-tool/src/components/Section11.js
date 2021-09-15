@@ -55,16 +55,19 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box textAlign="left" fontSize="h5.fontSize" fontWeight="bold">
           The Fast Lane.
           </Box>
 
           <Box>
           This lane has not much time available and a very limited number of persons gets access. These necessary limitations allow a higher risk profile for support, fit with objectives, coordination and specialized tasks for integration with parent organisations. All the necessary interventions are pre-sorted in this section.
           </Box>
-          
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
-            <p>Set general interventions</p>
+
+          <Typography variant="h6">
+          <p>Set general interventions</p>
+          </Typography>
+          <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
+            
             <ul>
               <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
               <li>propose common measures for viability (power and actual role for support of partners, short term and long-term benefits for fit with objectives, market, performance requirements, technology, attraction and form for the Idea, staff, strength and style for cooperation, structure, planning and routines for coordination, modular and architectural for partitioning of work) leading to support for the MPI</li>
@@ -75,7 +78,9 @@ const Step1 = (props) => {
 
           </Box>
 
+          <Typography variant="h6">
           <p>Set direct interventions for the Fast Lane</p>
+          </Typography>
             <AppBar position="relative">
                   <Tabs value={value}  onChange={handleTabs} scrollButtons="auto" variant="scrollable">
                     <Tab label="Support"></Tab>
@@ -89,8 +94,9 @@ const Step1 = (props) => {
                   </Tabs>
                 </AppBar>
                 <Box minHeight="400px">
-                <TabPanel value={value} index={0}>
-                 <p>Support</p>
+                <TabPanel value={value} index={0} >
+                
+                
                   <ul>
                     <li>check the selection of (new) parties preventing use of wrong criteria</li>
                     <li>gather in the first meeting existing input for the Inception phase and existing questions about viability leading to motivation to go on if used or answered respectively</li>
@@ -101,9 +107,10 @@ const Step1 = (props) => {
                     <li>allocate work based on the future roles leading to long term support</li>
                     <li>demand that partner organizations are very active in contributing with finances, machines, room and/or staff leading to an understanding of the level of support </li>
                   </ul>  
+                
                 </TabPanel>
                 <TabPanel value={value} index={1}>
-                   <p>Idea and it’s characteristics</p>
+                   
                     <ul>
                       <li>invite users in an early stage leading to participants that are realistic about the idea</li>
                       <li>identify persons linked to the (decision) gates, persons linked to appliance and future owners of the know-how leading to the best first input for the idea</li>
@@ -116,7 +123,7 @@ const Step1 = (props) => {
                     </ul>  
                 </TabPanel>
                 <TabPanel value={value} index={2}>
-                <p>Fit with objectives</p>
+               
                   <ul>
                     <li>invite organizations to enter the MPI to focus on efficiency benefits</li>
                     <li>put own objectives or problems on the agenda of start-up meeting leading to starting points about conditions for participation and of mutual views of participants’ contributions</li>
@@ -127,7 +134,7 @@ const Step1 = (props) => {
                   </ul> 
                 </TabPanel>
                 <TabPanel value={value} index={3}>
-                <p>Cooperation next phase(s)</p>
+               
                   <ul>
                     <li>invite staff relevant from a customer point of view leading to fulfilling expectations of customers</li>
                     <li>invite device builders and end-users with pre-competitive interests for the same market</li>
@@ -145,7 +152,7 @@ const Step1 = (props) => {
                   </ul> 
                 </TabPanel>
                 <TabPanel value={value} index={4}>
-                <p>Coordination of next phase(s)</p>
+                
                   <ul>
                     <li>arrange immediately coordination of change - and conflict management as well in decision making leading to growth of trust </li>
                     <li>use non-binding contracts leading a basis for interpersonal trust</li>
@@ -160,7 +167,7 @@ const Step1 = (props) => {
                   </ul> 
                 </TabPanel>
                 <TabPanel value={value} index={5}>
-                <p>Partitioning of work</p>
+                
                 <ul>
                   <li>agree on the starting points about what to do because this makes you, your parent organization or other initiators seeing the same assignment leading to a shared view on the process</li>
                   <li>make work packages for the idea/CBO in order of materials  modules  panel  system  equipment (assumption: because this emphasizes efficiency) leading to the least rework</li>
@@ -169,13 +176,13 @@ const Step1 = (props) => {
                 </ul>
                 </TabPanel>
                 <TabPanel value={value} index={6}>
-                <p>Specialized tasks for integration</p>
+                
                 <ul>
                   <li>deliver at the end of the Inception phase a stage gate document for ‘the Idea gate’ with the elaborated viability criteria so perceptual distance is minimized between supporters becoming aware of the viability of the initiative leading to a shared go or no-go decision for continuation</li>
                 </ul>
                 </TabPanel>
                 <TabPanel value={value} index={7}>
-                <p>Set indirect interventions</p>
+               
                 <ul>
                   <li>have regular and systematic interaction using rich media ties leading to the working up of trust (initiation)</li>
                   <li>make sure participants share a ‘dream’ or (identification)</li>
@@ -207,18 +214,14 @@ const Step1 = (props) => {
                 </Button>
            </div>   */}
 
-         <Box style={{marginTop: '20px', display: 'flex', justifyContent: 'space-between'}}>
+         {/*<Box style={{marginTop: '20px', display: 'flex', justifyContent: 'space-between'}}>
           <a style={{textDecoration: 'none'}} href="../downloads/First_general_interventions.pdf" download="First Set General Interventions" target="_blank">
            <Fab  variant="extended" color="primary" >
               <CloudDownloadIcon style={{marginRight: '10px'}}/>
               interventions in pdf
             </Fab>     
             </a>
-            
-
-
-
-          </Box>     
+          </Box> */ }   
               
         </Box>
       </Typography>
