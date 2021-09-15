@@ -13,7 +13,7 @@ const Start = (props) => {
     <Box mt={3} >
     <Paper  elevation={3} >
 
-      <Typography component="div">
+      <Typography>
         <Box p={3}>
           
           <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
@@ -21,15 +21,11 @@ const Start = (props) => {
           </Box>
 
           <Box component="p" textAlign="left"  >
-          This tool will make it easy to... lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          This tool will help you to find the interventions for the development of your multi-party initiative. These interventions will deliver you the possibility to assess the viability of your initiative. Viability of your initiative needs support from the parent organisations, an idea with certain characteristics, fit with objectives of participants and a view on coordination, cooperation, work partitioning and communication lines with parent organisations in the next phase(s). Every starting initiative needs a set of interventions from the intervention box to create viability, but since every initiative is unique you have to customize your individual process with the right interventions for the next step. 
           </Box>
 
           <Box component="p" textAlign="left" >
-          Please follow the questions and...  
-          duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          Please follow the questions to find the right interventions. Please understand that execution of each intervention adds unique information to the initiative and it is important to consolidate this yield. This consolidation is again input for next interventions. It is possible to iterate several times through the sections and even execute the same intervention more than once. At the same time it is necessary to execute interventions for all the seven components of viability of your initiative.
           </Box>
           
             <Button onClick={handleClickProceed} variant="contained" color="primary">

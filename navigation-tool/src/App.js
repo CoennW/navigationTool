@@ -16,61 +16,62 @@ import SectionI from './components/SectionI';
 import Section11 from './components/Section11';
 import Section12 from './components/Section12';
 import Section13 from './components/Section13';
+import Section14 from './components/Section14';
+import Section15 from './components/Section15';
+import Section16 from './components/Section16';
+import Section17 from './components/Section17';
+import Section18 from './components/Section18';
+import Section19 from './components/Section19';
+import Section20 from './components/Section20';
+import Section21 from './components/Section21';
+import Section22 from './components/Section22';
 
 import NoRelevance from './components/NoRelevance';
 import { useState } from 'react';
 
-import { Container,  CssBaseline } from '@material-ui/core';
+import { Container } from '@material-ui/core';
 
-
-
-
-
-
- 
 function App() {
 
- 
-  
   const changeSection = (newSection) => {
 
     let makeActive;
     
-    switch('section13') {
-      case 'start':
+    switch('section20') {
+        case 'start':
         makeActive = <Start changeSection={changeSection}/>
         break;
-      case 'noRelevance':
+        case 'noRelevance':
         makeActive = <NoRelevance changeSection={changeSection}/>
         break;
-      case 'step1':
+        case 'step1':
         makeActive = <Step1 changeSection={changeSection}/>
         break;
-      case 'section1':
+        case 'section1':
         makeActive = <Section1 changeSection={changeSection}/> 
         break;
-      case 'section2':
+        case 'section2':
         makeActive = <Section2 changeSection={changeSection}/>
         break;
-      case 'section3':
+        case 'section3':
         makeActive = <Section3 changeSection={changeSection}/>
         break;
-      case 'section4':
+        case 'section4':
         makeActive = <Section4 changeSection={changeSection}/>
         break;
-      case 'section5':
+        case 'section5':
         makeActive = <Section5 changeSection={changeSection}/>
         break;
-      case 'section6':
+        case 'section6':
         makeActive = <Section6 changeSection={changeSection}/>
         break;
-      case 'section7':
+        case 'section7':
         makeActive = <Section7 changeSection={changeSection}/>
         break;
         case 'section8':
         makeActive = <Section8 changeSection={changeSection}/>
         break;
-      case 'section9':
+        case 'section9':
         makeActive = <Section9 changeSection={changeSection}/>
         break;
         case 'section11':
@@ -82,7 +83,33 @@ function App() {
         case 'section13':
         makeActive = <Section13 changeSection={changeSection}/>
         break;
-      
+        case 'section14':
+        makeActive = <Section14 changeSection={changeSection}/>
+        break;
+        case 'section15':
+        makeActive = <Section15 changeSection={changeSection}/>
+        break;
+        case 'section16':
+        makeActive = <Section16 changeSection={changeSection}/>
+        break;
+        case 'section17':
+          makeActive = <Section17 changeSection={changeSection}/>
+          break;
+        case 'section18':
+          makeActive = <Section18 changeSection={changeSection}/>
+          break;
+          case 'section19':
+          makeActive = <Section19 changeSection={changeSection}/>
+          break;
+          case 'section20':
+            makeActive = <Section20 changeSection={changeSection}/>
+            break;
+            case 'section21':
+            makeActive = <Section21 changeSection={changeSection}/>
+            break;
+            case 'section22':
+            makeActive = <Section22 changeSection={changeSection}/>
+            break;
       case 'sectionI':
         makeActive = <SectionI changeSection={changeSection}/>
         break; 
@@ -98,18 +125,15 @@ function App() {
   const [activeSection, setActiveSection] = useState(<Start changeSection={changeSection}/>);
 
   return ( 
-    <div className="App">
+    <div className="App">      
 
-      <CssBaseline/>
-
-            <Menu />
-
-      <Container maxWidth="md">
+              <Menu />
+        <Container maxWidth="md">
+      
+        {activeSection}
+          
+        </Container>
      
-      {activeSection}
-        
-      </Container>
-    
     </div>
   );
 }

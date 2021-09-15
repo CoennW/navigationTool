@@ -26,12 +26,11 @@ function Menu() {
       <AppBar position="static">
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="build">
-            <BuildIcon />
+            <BuildIcon/>
           </IconButton>
           <Typography align="left" variant="h6" className={classes.title}>
-            Navigation Tool
+            How to find the right intervention for the next step?
           </Typography>
-         
         </Toolbar>
       </AppBar>
     </div>
