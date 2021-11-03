@@ -82,10 +82,10 @@ const Step1 = (props) => {
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
-            <li>•	put own objectives or problems on the agenda of start-up meeting leading to starting points about conditions for participation and of mutual views of participants’ contributions</li>
-            <li>•	formulate the movement in terms of objectives, participants, market and technology leading to high identification with the MPI </li>
-            <li>•	make participants identify objective(s) for the longer term so risks for short term support are compensated</li>
-            <li>•	Review patents (assumption: position of competitors become clear) leading to the right focus of participants</li>
+            <li>put own objectives or problems on the agenda of start-up meeting leading to starting points about conditions for participation and of mutual views of participants’ contributions</li>
+            <li>formulate the movement in terms of objectives, participants, market and technology leading to high identification with the MPI </li>
+            <li>make participants identify objective(s) for the longer term so risks for short term support are compensated</li>
+            <li>review patents leading to the right focus of participants</li>
           </ul> 
 
           </Box>
@@ -102,7 +102,6 @@ const Step1 = (props) => {
             <li>combine organizational strengths leading to competitive advantages </li>
             <li>include big parties (with power/money) {"<>"} small parties (with room to maneuver/few conventions) leading to speed </li>
             <li>make the professionalism of parties visible leading to speed in activities </li>
-            <li>make an inventory of competences and needs of parties leading to good arrangements to cooperate </li>
             <li>make sure that the idea connects with the superordinate objectives of the branch so participants from that branch become willing to contribute  </li>
             <li>choose parties that add value and speed by your first appraisals leading to the possibility of better evaluations during later actions</li>
             <li>be very explicit on criteria for staff ({">"} brilliant, gritty) leading to deep understanding of topics </li>
@@ -118,7 +117,7 @@ const Step1 = (props) => {
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
-            <li>make sure that participants identify themselves with the MPI and with their parent organizations leading to better assessment of partners behaviour•	make sure that participants identify themselves with the MPI and with their parent organizations leading to better assessment of partners behaviour</li>
+            <li>make sure that participants identify themselves with the MPI and with their parent organizations leading to better assessment of partners behaviour</li>
             <li>select key persons with less strict ties in the parent organizations leading to less hindering dependencies for the MPI </li>
           </ul> 
 
@@ -147,7 +146,7 @@ const Step1 = (props) => {
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
             <li>organize decision making with parent organizations only about main issues leading to support for picking up the role of stakeholder</li>
-            <li>in case of subsidy ask also the same amount of parties’ responsibles (assumption: because it explicates the willingness) leading to first selection criterion between parties</li>
+            <li>in case of subsidy ask also the same amount of parties’ responsibles leading to first selection criterion between parties</li>
           </ul> 
 
           </Box>

@@ -46,7 +46,7 @@ const Step1 = (props) => {
           <ul>
             <li>allocate work based on the future roles leading to long term support</li>
             <li>give the launching customer a discount for future purchases leading to support of the initiative</li>
-            <li>execute a cost-benefit analysis (assumption: because assessing the acquiring of knowledge from this partner leads to insight for (coordination) costs of sharing (tacit) knowledge</li>
+            <li>execute a cost-benefit analysis leading to to insight for (coordination) costs of sharing (tacit) knowledge</li>
           </ul> 
 
           </Box>

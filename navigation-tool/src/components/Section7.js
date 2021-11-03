@@ -41,21 +41,20 @@ const Step1 = (props) => {
 
       <Typography component="div">
         <Box p={3}>
-          
+
           <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
           First set general interventions.
           </Box>
 
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
+          <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ol>
             <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
-            <li>provide the key-participants a learning module about IPA so they become aware of the essentials of IPA leading to shared view on tools and outcomes</li>
-            <li>give Support of parent organizations, Idea description and Fit with objectives emphasis in the beginning leading to motivation to develop ideas about Cooperation, Coordination, Partitioning of work and Integration with parent organizations later. </li>
+            <li>provide the key-participants with a learning module about IPA so they become aware of the essentials of IPA leading to shared view on tools and outcomes</li>
+            <li>give Support of parent organizations, Idea description and Fit with objectives emphasis in the beginning leading to motivation later to develop ideas about Cooperation, Coordination, Partitioning of work and Integration with parent organizations. </li>
             <li>begin to work on trust immediately leading to positive (inter-organizational) collaborative behaviour. If relevant go to Section 15 for concrete interventions</li>
             <li>propose a set of initiating activities leading to support for follow up activities. If relevant go to Section 16 for concrete interventions</li>
             <li>make an inventory of what is already available at the current parties as input for or interpretation of the viability components leading to a shared view of (maybe different) starting points.</li>
           </ol> 
-
           </Box>
 
           <Box>
@@ -76,12 +75,12 @@ const Step1 = (props) => {
            </div>   */}
 
          <Box style={{marginTop: '20px', display: 'flex', justifyContent: 'space-between'}}>
-          <a style={{textDecoration: 'none'}} href="../downloads/First_general_interventions.pdf" download="First Set General Interventions" target="_blank">
+          {/* <a style={{textDecoration: 'none'}} href="../downloads/First_general_interventions.pdf" download="First Set General Interventions" target="_blank">
            <Fab  variant="extended" color="primary" >
               <CloudDownloadIcon style={{marginRight: '10px'}}/>
               interventions in pdf
             </Fab>     
-            </a>
+            </a> */}
             <Button id="proceed" value='section8' onClick={handleClickProceed} variant="text" color="secondary">
                 Proceed to next iteration
             </Button>

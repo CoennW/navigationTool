@@ -43,18 +43,18 @@ const Step1 = (props) => {
           </Typography>
 
           <Typography variant="h6" >
-          Do you have (hardly) no restrictions concerning completion time or the number of parties now?
+          Do you have (some) restrictions concerning completion time or the number of parties now?
           </Typography>
          
         
          
       
           <div className={classes.root}>
-                <Button name="btn1" value="section6" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
-                    Yes
-                </Button>
-                <Button name="btn2" style={{marginLeft:'20px'}} value="section3" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                <Button name="btn2" value="section3" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
                     No
+                </Button>
+                <Button name="btn1"  style={{marginLeft:'20px'}} value="section6" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    Yes
                 </Button>
            </div>           
         </Box>

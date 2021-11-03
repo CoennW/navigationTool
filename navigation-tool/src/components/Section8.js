@@ -38,14 +38,15 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+        
+
+          <Typography variant="subtitle2">
           Question 8
-          </Box>
+          </Typography>
 
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
-          Do you have a need for other general interventions than in Section 7?  
-
-          </Box>
+          <Typography variant="h6" >
+          Do you have a need for other general interventions than in Section 7?
+          </Typography>
          
       
           <div className={classes.root}>

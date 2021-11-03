@@ -9,6 +9,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import Divider from '@material-ui/core/Divider';
 
+
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
@@ -39,8 +40,9 @@ function TopBar(props) {
   };
 
   return (
-    <div className={classes.root}>
-      <AppBar position="static">
+    <div className={classes.root} >
+    
+      <AppBar position="fixed" >
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="build" onClick={handleClick}>
           <MenuIcon/>
@@ -80,6 +82,7 @@ function TopBar(props) {
           </Typography>
         </Toolbar>
       </AppBar>
+     
     </div>
   );
 }

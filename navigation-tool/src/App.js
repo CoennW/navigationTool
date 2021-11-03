@@ -123,9 +123,9 @@ function App() {
   const [activeSection, setActiveSection] = useState(<Start changeSection={changeSection}/>);
 
   return ( 
-    <div className="App">      
+    <div className="App"  style={{paddingTop:'80px'}}>      
 
-              <Menu  changeSection={changeSection} />
+        <Menu  changeSection={changeSection} />
         <Container maxWidth="md">
       
         {activeSection}

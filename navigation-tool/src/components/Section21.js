@@ -127,9 +127,9 @@ const Step1 = (props) => {
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
-            <li>•	agree on the starting points about what to do because this makes you, your parent organization or other initiators seeing the same assignment leading to a shared view on the process</li>
-            <li>•	make work packages for the idea/CBO in order of materials {">"} modules {">"} panel {">"} system {">"} equipment (assumption: because this emphasizes efficiency) leading to the least rework </li>
-            <li>•	think about modular or architectural development (assumption: because this influences development of ties between partners) leading to different relations and knowledge flows</li>
+            <li>agree on the starting points about what to do because this makes you, your parent organization or other initiators seeing the same assignment leading to a shared view on the process</li>
+            <li>make work packages for the idea/CBO in order of materials {">"} modules {">"} panel {">"} system {">"} equipment (assumption: because this emphasizes efficiency) leading to the least rework </li>
+            <li>think about modular or architectural development leading to different relations and knowledge flows</li>
             
           </ul> 
 
@@ -143,7 +143,7 @@ const Step1 = (props) => {
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
-            <li>think about how to integrate independent operating of MPI and communication with parent organizations (assumption: because sidestepping communication routines of parents) leads to best progress </li>
+            <li>think about how to integrate independent operating of MPI and communication with parent organizations leads to best progress </li>
            
           </ul> 
 

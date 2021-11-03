@@ -52,9 +52,9 @@ const Step1 = (props) => {
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
-            <li>•	create a real safe environment, even if the possibility for exit is arranged leading to better cooperation</li>
-            <li>•	use visualization, ethnography, collaborative sensemaking, assumption surfacing or field experiments to formulate objectives/ideas leading to leverage of differences </li>
-            <li>•	organize network meetings leading to invitation of the best participants</li>
+            <li>create a real safe environment, even if the possibility for exit is arranged leading to better cooperation</li>
+            <li>use visualization, ethnography, collaborative sensemaking, assumption surfacing or field experiments to formulate objectives/ideas leading to leverage of differences </li>
+            <li>organize network meetings leading to invitation of the best participants</li>
           </ul> 
 
           </Box>
@@ -73,7 +73,7 @@ const Step1 = (props) => {
             <li>bring competences for creating a MPI on board preventing wrong items in this precontractual phase</li>
             <li>use methods as mental simulation or benefit comparison leading to support for collaboration with these parties</li>
             <li>show a problem caused by an outside party leading to focus within the group</li>
-            <li>obtain references from a third party (assumption: when a party had prior dealings with a potential partner for the MPI) explicit experiences help to assess future support</li>
+            <li>obtain references from a third party leading to explicit experiences help to assess future support</li>
             <li>circumvent tendering by creation of collaboration contracts leading to optimalization instead of sub-optimalization and hierarchy</li>
           </ul> 
 
@@ -88,17 +88,17 @@ const Step1 = (props) => {
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
-            <li>•	promote initial face to face contacts and shared cyber spaces leading to openness</li>
-            <li>•	organize the learnings through accessible files leading to progressive insight for all</li>
-            <li>•	use customer visit teams, lead user analysis or focus groups to enrich the market/performance aspect of the idea leading to common formulations</li>
-            <li>•	let no one party gets the biggest influence on the development leading to weakening ties of that party with the other parties</li>
-            <li>•	introduce a rule that everybody can step out without sanction leading to relaxed presence</li>
-            <li>•	make the professionalism of parties visible leading to speed in activities</li>
-            <li>•	create a platform with residents (breakfast session, workshop, exploring meeting, idea generation) leading to higher support</li>
-            <li>•	organize communication outside-in leading to positive image of the MPI</li>
-            <li>•	beware for longing for formalization and details leading to spending a lot of indirect hours</li>
-            <li>•	install a learning attitude combined with a written learning history leading to sharing of new discoveries and insights</li>
-            <li>•	make launching customer act as informal principal leading to common focus</li>
+            <li>promote initial face to face contacts and shared cyber spaces leading to openness</li>
+            <li>organize the learnings through accessible files leading to progressive insight for all</li>
+            <li>use customer visit teams, lead user analysis or focus groups to enrich the market/performance aspect of the idea leading to common formulations</li>
+            <li>let no one party gets the biggest influence on the development leading to weakening ties of that party with the other parties</li>
+            <li>introduce a rule that everybody can step out without sanction leading to relaxed presence</li>
+            <li>make the professionalism of parties visible leading to speed in activities</li>
+            <li>create a platform with residents (breakfast session, workshop, exploring meeting, idea generation) leading to higher support</li>
+            <li>organize communication outside-in leading to positive image of the MPI</li>
+            <li>beware for longing for formalization and details leading to spending a lot of indirect hours</li>
+            <li>install a learning attitude combined with a written learning history leading to sharing of new discoveries and insights</li>
+            <li>make launching customer act as informal principal leading to common focus</li>
           </ul> 
 
           </Box>
@@ -106,7 +106,7 @@ const Step1 = (props) => {
           <br/>
 
           <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Section I.4: helping exchange
+          Section I.4: helping reflection
           </Box>
           
 
@@ -116,7 +116,7 @@ const Step1 = (props) => {
             <li>point at concurrent initiatives leading to enrichment of the MPI</li>
             <li>work with a visualized idea leading to synchronization and an equal starting point for next activities</li>
             <li>use methods as imagery, storytelling, metaphors, analogies and assumption surfacing leading to new enrichments</li>
-            <li>stretch from technology to market model (assumption: because this makes volume, development in raw materials etc. explicit) leading to realistic enrichment</li>
+            <li>stretch from technology to market model leading to realistic enrichment</li>
             <li>formulate abstract business case and cost estimates leading to realistic enrichment</li>
           </ul> 
 
@@ -125,13 +125,13 @@ const Step1 = (props) => {
           <br/>
 
           <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Section I.5: helping exchange
+          Section I.5: helping conversion
           </Box>
           
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
-            <li>formulate the relation of objectives and the idea of the MPI in the Intention Agreement (assumption: because this explicates the interests of participants) leading to taking each other in account</li>
+            <li>formulate the relation of objectives and the idea of the MPI in the Intention Agreement leading to taking each other in account</li>
             <li>make go/no-go at a kind of Idea gate formally leading to serious support</li>
           </ul> 
 

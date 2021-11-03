@@ -47,7 +47,7 @@ const Step1 = (props) => {
             <li>invite staff relevant from a customer point of view leading to fulfilling expectations of customers</li>
             <li>invite staff representing the strength of the participants leading to unique resources in cooperation </li>
             <li>invite device builders and end-users with pre-competitive interests for the same market </li>
-            <li>Take time to understand the non-moving starting points of the initiative (assumption: because parties interpret them as positive) leading to unchecked starting points</li>
+            <li>take time to understand the non-moving starting points of the initiative (assumption: because parties interpret them as positive) leading to unchecked starting points</li>
           </ul> 
 
           </Box>
