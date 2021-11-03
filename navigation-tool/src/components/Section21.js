@@ -36,11 +36,17 @@ const Step1 = (props) => {
 
       <Typography component="div">
         <Box p={3}>
-          
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          4A: Reflection   {">"} Support
+        <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          Reflection Interventions
           </Box>
-          (Set of direct interventions for creating individual and common perspectives and potential)
+          <Box variant="subtitle2" >
+          Sets of direct interventions for creating individual and common perspectives and potential.
+          </Box>
+
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 4A: Reflection   {">"} Support
+          </Box>
+          
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -51,11 +57,11 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 4B: Reflection   {">"} Idea
+          
+          <Box  mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 4B: Reflection   {">"} Idea
           </Box>
-          (Set of direct interventions for creating individual and common perspectives and potential)
+          
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -74,11 +80,11 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 4C: Reflection   {">"} Fit with objectives 
+          
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 4C: Reflection   {">"} Fit with objectives 
           </Box>
-          (Set of direct interventions for creating individual and common perspectives and potential)
+          
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -87,11 +93,11 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 4D: Reflection   {">"} Cooperation
+          
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 4D: Reflection   {">"} Cooperation
           </Box>
-          (Set of direct interventions for creating individual and common perspectives and potential)
+          
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -101,11 +107,11 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 4E:  Reflection   {">"} Coordination
+          
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 4E:  Reflection   {">"} Coordination
           </Box>
-          (Set of direct interventions for creating individual and common perspectives and potential)
+          
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -119,11 +125,12 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 4F: Reflection  {">"} Partitioning of work 
+          
+        
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 4F: Reflection  {">"} Partitioning of work 
           </Box>
-          (Set of direct interventions for creating individual and common perspectives and potential)
+         
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -135,11 +142,11 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 4G: Reflection   {">"} Specialized tasks 
+         
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 4G: Reflection   {">"} Specialized tasks 
           </Box>
-          (Set of direct interventions for creating individual and common perspectives and potential)
+          
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -149,7 +156,19 @@ const Step1 = (props) => {
 
           </Box>
 
-
+          <Box fontWeight="bold">
+          Do you have a need for indirect interventions?  
+          </Box>
+         
+          	
+           <div className={classes.root}>
+                <Button name="btn1" value="sectionI" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    Yes
+                </Button>
+                <Button name="btn2" style={{marginLeft:'20px'}} value="section19" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    No
+                </Button>
+           </div>   
 
          {/* <br/>
           <Box fontWeight="bold">

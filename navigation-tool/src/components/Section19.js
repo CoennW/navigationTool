@@ -36,11 +36,17 @@ const Step1 = (props) => {
 
       <Typography component="div">
         <Box p={3}>
-          
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          2A: Identification {">"} Support
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          Identification interventions
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
+
+          <Box variant="subtitle2" >
+          Set of direct interventions for understanding each other and legitimize co-existence in a MPI.
+          </Box>
+
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 2A: Identification {">"} Support
+          </Box>
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -57,28 +63,22 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 2B: Identification {">"} Idea
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 2B: Identification {">"} Idea
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
             <li>formulate explicitly why collaboration is worthwhile leading to a resource-based, transaction-cost based or other added value-based (f.e. higher earnings, larger market share, longer survival) enrichment process.</li>
-            <li>Introduce a (collaborative) style of leadership leading to new meanings for the idea to be executed by these parties</li>
             <li>prevent focus on only one characteristic of the idea leading to right evaluation of their possible contribution to development of the idea</li>
-            <li>identify persons linked to the (decision) gates, persons linked to appliance and future owners of the know-how </li>
-            <li>leading to the best first input for the idea</li>
+            <li>identify persons linked to the (decision) gates, persons linked to appliance and future owners of the know-how leading to the best first input for the idea</li>
           </ul> 
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 2C: Identification {">"} Fit with objectives 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 2C: Identification {">"} Fit with objectives 
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -90,11 +90,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 2D: Identification {">"} Cooperation
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 2D: Identification {">"} Cooperation
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -109,25 +107,22 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 2E:  Identification {">"} Coordination
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 2E:  Identification {">"} Coordination
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
             <li>make sure that participants identify themselves with the MPI and with their parent organizations leading to better assessment of partners behaviour</li>
             <li>select key persons with less strict ties in the parent organizations leading to less hindering dependencies for the MPI </li>
+            <li>Introduce a (collaborative) style of leadership leading to new meanings for the idea to be executed by these parties</li>
           </ul> 
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 2F: Identification {">"} Partitioning of work 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 2F: Identification {">"} Partitioning of work 
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -137,11 +132,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 2G: Identification {">"} Specialized tasks 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 2G: Identification {">"} Specialized tasks 
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -150,7 +143,19 @@ const Step1 = (props) => {
           </ul> 
 
           </Box>
-
+          <Box fontWeight="bold">
+          Do you have a need for indirect interventions?  
+          </Box>
+         
+          	
+           <div className={classes.root}>
+                <Button name="btn1" value="sectionI" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    Yes
+                </Button>
+                <Button name="btn2" style={{marginLeft:'20px'}} value="section19" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    No
+                </Button>
+           </div>   
 
 
          {/* <br/>

@@ -116,7 +116,7 @@ function App() {
       default:
         makeActive = activeSection;
         break;
-    }
+    } 
       setActiveSection(makeActive); 
   }
 

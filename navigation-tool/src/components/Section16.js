@@ -42,11 +42,17 @@ const Step1 = (props) => {
 
       <Typography component="div">
         <Box p={3}>
-          
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box: 1A: Initiation {">"} Support
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+            Initiation Interventions
           </Box>
-          (Set of direct interventions for nomination, first meetings, introduction)
+
+          <Box variant="subtitle2" >
+          Set of direct interventions for nomination, first meetings, introduction.
+          </Box>
+
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+            Box: 1A: Initiation {">"} Support
+          </Box>
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -63,11 +69,9 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 1B: Initiation {">"} Idea
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 1B: Initiation {">"} Idea
           </Box>
-          (Set of direct interventions for nomination, first meetings, introduction)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -77,11 +81,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 1C: Initiation {">"} Fit with objectives 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 1C: Initiation {">"} Fit with objectives 
           </Box>
-          (Set of direct interventions for nomination, first meetings, introduction)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -91,13 +93,12 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box fontWeight="bold">
+          <Box mt={4} fontWeight="bold">
           Do you have a need for other initiating activities for cooperation, coordination, partitioning of work? 
           </Box>
          
           	
-           <div className={classes.root}>
+           <div mt={4} className={classes.root}>
                 <Button name="btn1" value="section18" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
                     Yes
                 </Button>

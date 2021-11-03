@@ -50,8 +50,8 @@ const Step1 = (props) => {
           <List >
              
              <ListItem style={{flexDirection: 'column', alignItems: 'flex-start'}}>
-               <ListItemText primary="- to minimize the perceptual distance between potential partners."/>
-               <ListItemText primary="- to maximize the chance for success with low toll for participants."/>
+               <ListItemText primary="1 - to minimize the perceptual distance between potential partners."/>
+               <ListItemText primary="2 - to maximize the chance for success with low toll for participants."/>
              </ListItem>
            
          </List>

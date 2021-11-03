@@ -36,11 +36,18 @@ const Step1 = (props) => {
 
       <Typography component="div">
         <Box p={3}>
-          
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          5A: Conversion    {">"} Support
+        <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          Conversion Interventions
           </Box>
-          (Set of direct interventions for crystallization in entities, work packages, recognizing shared challenges, accepting several agenda’)
+
+
+          <Box variant="subtitle2" >
+          Set of direct interventions for crystallization in entities, work packages, recognizing shared challenges, accepting several agenda’s.
+          </Box>
+
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 5A: Conversion    {">"} Support
+          </Box>
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -49,11 +56,9 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 5B: Conversion    {">"} Idea
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 5B: Conversion    {">"} Idea
           </Box>
-          (Set of direct interventions for crystallization in entities, work packages, recognizing shared challenges, accepting several agenda’s)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -63,11 +68,10 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 5C: Conversion    {">"} Fit with objectives 
+          
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 5C: Conversion    {">"} Fit with objectives 
           </Box>
-          (Set of direct interventions for crystallization in entities, work packages, recognizing shared challenges, accepting several agenda’s)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -76,11 +80,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 5D: Conversion    {">"} Cooperation
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 5D: Conversion    {">"} Cooperation
           </Box>
-          (Set of direct interventions for crystallization in entities, work packages, recognizing shared challenges, accepting several agenda’s)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -91,11 +93,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 5E:  Conversion    {">"} Coordination
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 5E:  Conversion    {">"} Coordination
           </Box>
-          (Set of direct interventions for crystallization in entities, work packages, recognizing shared challenges, accepting several agenda’s)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -109,11 +109,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 5F: Conversion   {">"} Partitioning of work 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 5F: Conversion   {">"} Partitioning of work 
           </Box>
-          (Set of direct interventions for crystallization in entities, work packages, recognizing shared challenges, accepting several agenda’s)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -125,11 +123,10 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 5G: Conversion    {">"} Specialized tasks 
+         
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+           Box 5G: Conversion    {">"} Specialized tasks 
           </Box>
-          (Set of direct interventions for crystallization in entities, work packages, recognizing shared challenges, accepting several agenda’s)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -139,7 +136,19 @@ const Step1 = (props) => {
 
           </Box>
 
-
+          <Box fontWeight="bold">
+          Do you have a need for indirect interventions?  
+          </Box>
+         
+          	
+           <div className={classes.root}>
+                <Button name="btn1" value="sectionI" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    Yes
+                </Button>
+                <Button name="btn2" style={{marginLeft:'20px'}} value="section19" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    No
+                </Button>
+           </div>   
 
          {/* <br/>
           <Box fontWeight="bold">

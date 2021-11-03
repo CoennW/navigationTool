@@ -42,27 +42,30 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
 
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
           First set general interventions.
           </Box>
 
+          <Box>
+          After the (selection of the) interventions are finished, 
+          <Box component='span' color=""> consolidate the output before going to Section 8 for the next iterations </Box>
+           now the MPI has finished 
+          its first set of activities and goes on in the Inception phase. 
+          </Box>
+
+
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
-          <ol>
+          <ul>
             <li>propose the use of an Inception phase leading to a small cognitive bias gap in participants</li>
             <li>provide the key-participants with a learning module about IPA so they become aware of the essentials of IPA leading to shared view on tools and outcomes</li>
             <li>give Support of parent organizations, Idea description and Fit with objectives emphasis in the beginning leading to motivation later to develop ideas about Cooperation, Coordination, Partitioning of work and Integration with parent organizations. </li>
             <li>begin to work on trust immediately leading to positive (inter-organizational) collaborative behaviour. If relevant go to Section 15 for concrete interventions</li>
             <li>propose a set of initiating activities leading to support for follow up activities. If relevant go to Section 16 for concrete interventions</li>
             <li>make an inventory of what is already available at the current parties as input for or interpretation of the viability components leading to a shared view of (maybe different) starting points.</li>
-          </ol> 
+          </ul> 
           </Box>
 
-          <Box>
-          After the (selection of the) above interventions are finished, 
-          <Box component='span' color="primary.info"> consolidate the output before going to Section 8 for the next iterations starting here </Box>
-           now the MPI has finished 
-          its first set of activities and goes on in the Inception phase. 
-          </Box>
+         
          
           	
           {/* <div className={classes.root}>

@@ -56,8 +56,8 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          The Cloister Lane.
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          The Cloister Lane
           </Box>
 
           <Box>
@@ -85,7 +85,7 @@ const Step1 = (props) => {
           <p>Set direct interventions for The Cloister Lane</p>
           </Typography>
          
-            <AppBar position="relative">
+            <AppBar style={{zIndex: 0}} position="relative">
                   <Tabs value={value}  onChange={handleTabs} scrollButtons="auto" variant="scrollable">
                     <Tab label="Support"></Tab>
                     <Tab label="Idea and it’s characteristics"></Tab>
@@ -210,7 +210,7 @@ const Step1 = (props) => {
                 </Button>
            </div>   */}
 
-         <Box style={{marginTop: '20px', display: 'flex', justifyContent: 'space-between'}}>
+         {/* <Box style={{marginTop: '20px', display: 'flex', justifyContent: 'space-between'}}>
           <a style={{textDecoration: 'none'}} href="../downloads/First_general_interventions.pdf" download="First Set General Interventions" target="_blank">
            <Fab  variant="extended" color="primary" >
               <CloudDownloadIcon style={{marginRight: '10px'}}/>
@@ -221,7 +221,7 @@ const Step1 = (props) => {
 
 
 
-          </Box>     
+          </Box>      */}
               
         </Box>
       </Typography>

@@ -8,7 +8,7 @@ import { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { Height } from "@material-ui/icons";
+import { Block, Height } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -52,11 +52,11 @@ const Step1 = (props) => {
     <Box mt={3} >
     <Paper  elevation={3} >
 
-      <Typography component="div">
+      <Typography  component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          The Circus Lane.
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          The Circus Lane
           </Box>
 
           <Box>
@@ -82,7 +82,7 @@ const Step1 = (props) => {
           <Typography variant="h6">
           <p>Set direct interventions for The Circus Lane</p>
           </Typography>
-            <AppBar position="relative">
+            <AppBar style={{zIndex: 0, display: "block", width:"100%", margin: "0 50px 0px 0px"}} position="relative">
                   <Tabs value={value}  onChange={handleTabs} scrollButtons="auto" variant="scrollable">
                     <Tab label="Support"></Tab>
                     <Tab label="Idea and it’s characteristics"></Tab>

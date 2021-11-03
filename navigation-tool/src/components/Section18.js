@@ -36,11 +36,18 @@ const Step1 = (props) => {
 
       <Typography component="div">
         <Box p={3}>
-          
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          1D: Initiation {">"} Cooperation
+        <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          Initiation Interventions
           </Box>
-          (Set of direct interventions for nomination, first meetings, introduction)
+
+          <Box variant="subtitle2" >
+          Set of direct interventions for nomination, first meetings, introduction.
+          </Box>
+
+
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 1D: Initiation {">"} Cooperation
+          </Box>
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -52,9 +59,8 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          1E: Initiation {">"} Coordination
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 1E: Initiation {">"} Coordination
           </Box>
           (Set of direct interventions for nomination, first meetings, introduction)
 
@@ -66,9 +72,8 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          1F: Initiation {">"} Partitioning of work 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 1F: Initiation {">"} Partitioning of work 
           </Box>
           (Set of direct interventions for nomination, first meetings, introduction)
 
@@ -83,14 +88,14 @@ const Step1 = (props) => {
 
 
 
-          <br/>
-          <Box fontWeight="bold">
-          Do you have a need for indirect supporting interventions?  
+          
+          <Box mt={4} fontWeight="bold">
+          Do you have a need for indirect interventions?  
           </Box>
          
           	
            <div className={classes.root}>
-                <Button name="btn1" value="sectionI" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                <Button name="btn1"  value="sectionI" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
                     Yes
                 </Button>
                 <Button name="btn2" style={{marginLeft:'20px'}} value="section19" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">

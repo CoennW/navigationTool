@@ -32,11 +32,11 @@ const Step1 = (props) => {
     
        
       
-    <Box mt={5} >
+    <Box mt={3} >
     <Paper  elevation={3} >
 
       <Typography component="div">
-        <Box p={5}>
+        <Box p={3}>
           
           <Typography variant="subtitle2">
           Question 2

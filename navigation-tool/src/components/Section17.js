@@ -43,7 +43,7 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
           Supplemental general interventions
           </Box>
           

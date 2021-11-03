@@ -13,12 +13,15 @@ import Divider from '@material-ui/core/Divider';
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
+    
+    
   },
   menuButton: {
-    marginRight: theme.spacing(2),
+    marginRight: theme.spacing(1),
   },
   title: {
     flexGrow: 1,
+    margin: theme.spacing(1)
   },
 }));
 
@@ -40,13 +43,13 @@ function TopBar(props) {
   };
 
   return (
-    <div className={classes.root} >
+    <div className={classes.root} style={{zIndex: 3}}>
     
       <AppBar position="fixed" >
         <Toolbar>
           <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="build" onClick={handleClick}>
           <MenuIcon/>
-          
+
             
           </IconButton>
           <Menu
@@ -59,7 +62,7 @@ function TopBar(props) {
               <MenuItem onClick={() => handleClose('start')}>  Reset  </MenuItem>
               <Divider/>
               <MenuItem onClick={() => handleClose('section7')}>First set general interventions</MenuItem>
-              <MenuItem onClick={() => handleClose('sectionI')}>Indirect supporting interventions </MenuItem>
+              <MenuItem onClick={() => handleClose('sectionI')}>Indirect interventions </MenuItem>
               <Divider/>
               <MenuItem onClick={() => handleClose('section11')}>The Fast Lane</MenuItem>
               <MenuItem onClick={() => handleClose('section12')}>The Circus Lane</MenuItem>

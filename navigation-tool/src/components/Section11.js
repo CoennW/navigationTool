@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) => ({
       extendedIcon: {
         marginRight: theme.spacing(1),
       },
+      h6: {
+        margin: "0px"
+      }
       
     },
   }));
@@ -55,8 +58,8 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h5.fontSize" fontWeight="bold">
-          The Fast Lane.
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          The Fast Lane
           </Box>
 
           <Box>

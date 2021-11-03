@@ -14,6 +14,9 @@ const useStyles = makeStyles((theme) => ({
       extendedIcon: {
         marginRight: theme.spacing(1),
       },
+      box: {
+        marginRight: "30px"
+      }
       
     },
   }));
@@ -42,11 +45,11 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
           Interventions leading to trust
           </Box>
 
-          <Box borderRadius='5px' p={2} component="p" textAlign="left" bgcolor="#FAF2F3">
+          <Box  borderRadius='5px' component="p" p={1}  textAlign="left" border="1px dashed #e83946" >
           <ul>
             <li>discuss market overlap of parties leading to less contribution if present </li>
             <li>make sure that participants understand each other’s gains and pains leading to progress also in difficult times </li>

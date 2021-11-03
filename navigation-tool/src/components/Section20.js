@@ -36,26 +36,30 @@ const Step1 = (props) => {
 
       <Typography component="div">
         <Box p={3}>
-          
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          3A: Exchange  {">"} Support
+        <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          Exchange Interventions
           </Box>
-          (Set of direct interventions for routinizing communication, handling the boundary object and creating transparency)
+
+          <Box variant="subtitle2" >
+          Set of direct interventions for routinizing communication, handling the boundary object and creating transparency.
+          </Box>
+
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 3A: Exchange  {">"} Support
+          </Box>
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
             <li>allocate work based on the future roles leading to long term support</li>
             <li>give the launching customer a discount for future purchases leading to support of the initiative</li>
-            <li>execute a cost-benefit analysis leading to to insight for (coordination) costs of sharing (tacit) knowledge</li>
+            <li>execute a cost-benefit analysis leading to to insight for costs of sharing knowledge</li>
           </ul> 
 
           </Box>
           
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 3B: Exchange  {">"} Idea
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 3B: Exchange  {">"} Idea
           </Box>
-          (Set of direct interventions for routinizing communication, handling the boundary object and creating transparency)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -66,11 +70,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 3C: Exchange  {">"} Fit with objectives 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 3C: Exchange  {">"} Fit with objectives 
           </Box>
-          (Set of direct interventions for routinizing communication, handling the boundary object and creating transparency)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -79,32 +81,28 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 3D: Exchange  {">"} Cooperation
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 3D: Exchange  {">"} Cooperation
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
             <li>make the availability of staff, strengths and typical styles clear leading to realistic cooperation in activities</li>
             <li>start immediately with building trust leading to smooth knowledge exchange </li>
-            <li>guard equality (f.e. in decision making and talk time) during negotiations leading to access to them</li>
+           
             <li>implement collaborative leadership leading to facilitation of tacit learning </li>
             <li>treat input of mother organizations as trade goods leading to fair reciprocity in collaboration  </li>
             <li>install a stable working group with technical persons leading to stability in cooperation </li>
             <li>make supporters commit themselves for a long active role leading to low circulation of other persons in and around the MPI</li>
             <li>make the long- and short-term interests of partners clear so they stay motivated to work together</li>
-            <li>make sure that an end-user does not need to work continuously for the MPI leading to convenience for this contributorr</li>
+            <li>make sure that an end-user does not need to work continuously for the MPI leading to convenience for this contributor</li>
           </ul> 
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 3E:  Exchange  {">"} Coordination
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 3E:  Exchange  {">"} Coordination
           </Box>
-          (Set of direct interventions for routinizing communication, handling the boundary object and creating transparency)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -123,11 +121,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 3F: Exchange {">"} Partitioning of work 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 3F: Exchange {">"} Partitioning of work 
           </Box>
-          (Set of direct interventions for routinizing communication, handling the boundary object and creating transparency)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -139,11 +135,9 @@ const Step1 = (props) => {
 
           </Box>
 
-          <br/>
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
-          Intervention Box 3G: Exchange  {">"} Specialized tasks 
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          Box 3G: Exchange  {">"} Specialized tasks 
           </Box>
-          (Set of direct interventions for understanding each other and legitimize co-existence in a MPI)
 
           <Box borderRadius='5px' component="p" p={1} textAlign="left" border="1px dashed #e83946">
           <ul>
@@ -153,6 +147,20 @@ const Step1 = (props) => {
 
           </Box>
 
+
+          <Box fontWeight="bold">
+          Do you have a need for indirect interventions?  
+          </Box>
+         
+          	
+           <div className={classes.root}>
+                <Button name="btn1" value="sectionI" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    Yes
+                </Button>
+                <Button name="btn2" style={{marginLeft:'20px'}} value="section19" id="proceed" onClick={handleClickProceed} variant="contained" color="primary">
+                    No
+                </Button>
+           </div>   
 
 
          {/* <br/>

@@ -41,11 +41,18 @@ const Step1 = (props) => {
       <Typography component="div">
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h5.fontSize" fontWeight="bold">
-          Indirect supporting interventions.
+          <Box mb={1} textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+          Indirect interventions
           </Box>
 
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box>
+          After the (selection of the) interventions are finished, 
+          <Box component='span' color="primary.info"> consolidate the output before going to Section 8 for the next iterations </Box>
+           now the MPI has finished 
+          its first set of activities and goes on in the Inception phase. 
+          </Box>
+
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
           Section I.1: helping initiation
           </Box>
           
@@ -59,9 +66,8 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
 
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
           Section I.2: helping identification
           </Box>
           
@@ -79,9 +85,8 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
 
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
           Section I.3: helping exchange
           </Box>
           
@@ -99,13 +104,13 @@ const Step1 = (props) => {
             <li>beware for longing for formalization and details leading to spending a lot of indirect hours</li>
             <li>install a learning attitude combined with a written learning history leading to sharing of new discoveries and insights</li>
             <li>make launching customer act as informal principal leading to common focus</li>
+            <li>guard equality (f.e. in decision making and talk time) during negotiations leading to access to them</li>
           </ul> 
 
           </Box>
           
-          <br/>
 
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
           Section I.4: helping reflection
           </Box>
           
@@ -122,9 +127,8 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
 
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box mt={4} textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
           Section I.5: helping conversion
           </Box>
           
@@ -137,19 +141,14 @@ const Step1 = (props) => {
 
           </Box>
           
-          <br/>
+          
 
 
 
 
 
 
-          <Box>
-          After the (selection of the) above interventions are finished, 
-          <Box component='span' color="primary.info"> consolidate the output before going to Section 8 for the next iterations starting here </Box>
-           now the MPI has finished 
-          its first set of activities and goes on in the Inception phase. 
-          </Box>
+         
          
       
           {/* <div className={classes.root}>
@@ -161,17 +160,17 @@ const Step1 = (props) => {
                 </Button>
            </div>   */}
 
-         <Box style={{marginTop: '20px', display: 'flex', justifyContent: 'space-between'}}>
-          <a style={{textDecoration: 'none'}} href="../downloads/First_general_interventions.pdf" download="First Set General Interventions" target="_blank">
+         
+          {/* <a style={{textDecoration: 'none'}} href="../downloads/First_general_interventions.pdf" download="First Set General Interventions" target="_blank">
            <Fab  variant="extended" color="primary" >
               <CloudDownloadIcon style={{marginRight: '10px'}}/>
               interventions in pdf
             </Fab>     
-            </a>
+            </a> */}
             <Button id="proceed" value='section8' onClick={handleClickProceed} variant="text" color="secondary">
                 Proceed to next iteration
             </Button>
-          </Box>     
+              
               
         </Box>
       </Typography>
