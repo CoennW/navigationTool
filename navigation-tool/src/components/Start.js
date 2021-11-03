@@ -16,7 +16,7 @@ const Start = (props) => {
       <Typography>
         <Box p={3}>
           
-          <Box textAlign="left" fontSize="h6.fontSize" fontWeight="bold">
+          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
           Welcome to the Navigation Tool for the Intervention Box. 
           </Box>
 

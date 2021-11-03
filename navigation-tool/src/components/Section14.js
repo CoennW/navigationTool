@@ -1,51 +1,19 @@
-import React from "react";
+import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {Box, Typography, Button, Grid } from '@material-ui/core';
+import {Box, Typography, Slider } from '@material-ui/core';
 import { Paper } from '@material-ui/core';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import Fab from '@material-ui/core/Fab';
 import { useState } from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import Tabs from '@material-ui/core/Tabs';
-import Tab from '@material-ui/core/Tab';
-import { Height } from "@material-ui/icons";
-import { grey } from "@material-ui/core/colors";
 
-const useStyles = makeStyles((theme) => ({
-    root: {
-      '& > *': {
-        margin: theme.spacing(1),
-      },
-      extendedIcon: {
-        marginRight: theme.spacing(1),
-      },
-      
-    },
-  }));
+
+
+
+
+
 
 const Step1 = (props) => {
 
-    const classes = useStyles();
-
-
-    const [value, setValue] = useState(0);
-    const handleTabs = (e,val) => {
-      setValue(val)
-    }
-
-    const handleClickProceed = (event) => {
-        let value = event.currentTarget.value;
-        console.log(value);
-        props.changeSection(value);
-      };
     
-     function TabPanel(props) {
-       const {children, value, index} = props;
-       return (
-         <div>{value===index && (children)}</div>
-       );
-     }
-      
+    
 
     return (
     
@@ -53,18 +21,56 @@ const Step1 = (props) => {
     <Box mt={3} >
     <Paper  elevation={3} >
 
-      <Typography component="div">
+      
         <Box p={3}>
 
           <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
           Interim evaluation of the MPI
           </Box>
 
-         
-            
+         <Box>
+         Evaluate the actual status quo by:
+1) making a consolidation of the MPI by collecting the latest results: decisions made, consolidations so far and intended actions.
+2) asking individual participating keypersons of the MPI: a) what is/are the actual objective(s) of their current activities and b) desired outcomes of their current activities
+
+Then 3a) Compare the individual answers of question 2a) with the two objectives of the Inception phase
+- to minimize the perceptual distance  between potential partners    
+Individual position by assessing score of key-players: totally not driven by {"<"} 1     2      3      4       5 {">"} totally driven by
+
+- to maximize the chance for success with low toll for participants 
+Individual position by assessing score of key-players: totally not driven by {"<"} 1     2      3      4       5 {">"} totally driven by
+
+And 3b) Compare the individual answers of question 2b) with the following pre-scripted outcomes of the Inception phase. 
+
+         </Box>
+            <br />
+        <Typography>
+          Are respondents currently doing work for:
+        </Typography>
+
+        <Typography>
+          A) Support: person or group in the parent organizations allows/helps the initiative to go on.
+        </Typography>
+
+      	<Box style={{width:"50%"}}>
+          <Box style={{display:'flex', justifyContent:'space-between'}}>
+            <Typography variant="subtitle2">Totally not driven by</Typography>
+            <Typography variant="subtitle2">Totally driven by</Typography>
+          </Box>
+          <Slider
+            aria-label="Temperature"
+            defaultValue={0}
+            aria-valuetext="hi"
+            valueLabelDisplay="auto"
+            step={1}
+            min={1}
+            max={5}
+          />
+        </Box>
+
               
         </Box>
-      </Typography>
+     
     
     </Paper>
   </Box>
