@@ -82,7 +82,7 @@ const Step1 = (props) => {
           <Typography variant="h6">
           <p>Set direct interventions for The Circus Lane</p>
           </Typography>
-            <AppBar style={{zIndex: 0, display: "block", width:"100%", margin: "0 50px 0px 0px"}} position="relative">
+            <AppBar style={{zIndex: 0}} position="relative">
                   <Tabs value={value}  onChange={handleTabs} scrollButtons="auto" variant="scrollable">
                     <Tab label="Support"></Tab>
                     <Tab label="Idea and it’s characteristics"></Tab>

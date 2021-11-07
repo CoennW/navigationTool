@@ -1,14 +1,11 @@
 import React from "react";
 import { makeStyles } from '@material-ui/core/styles';
-import {Box, Typography, Button, Grid } from '@material-ui/core';
+import {Box, Typography} from '@material-ui/core';
 import { Paper } from '@material-ui/core';
-import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import Fab from '@material-ui/core/Fab';
 import { useState } from 'react';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
-import { Height } from "@material-ui/icons";
 
 const useStyles = makeStyles((theme) => ({
     root: {
@@ -84,7 +81,7 @@ const Step1 = (props) => {
           <Typography variant="h6">
           <p>Set direct interventions for the Fast Lane</p>
           </Typography>
-            <AppBar position="relative">
+            <AppBar style={{zIndex: 0}} position="relative">
                   <Tabs value={value}  onChange={handleTabs} scrollButtons="auto" variant="scrollable">
                     <Tab label="Support"></Tab>
                     <Tab label="Idea and it’s characteristics"></Tab>
