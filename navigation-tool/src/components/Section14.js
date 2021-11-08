@@ -334,18 +334,21 @@ const Step1 = (props) => {
             return <Likert key={i} responses={responses} question={item[1].question} onChange={item[1].onChange} />}
             )}
         </Box>
-        <Typography variant="body1">
-        <ol start="4">
-          <li>
-          Assess - based on answers to question 1 - in a different color the actual situation in the MPI by scores on the same scales at 3.
-          </li>
-          <li>
-          Evaluate which of the viability components are over- or undervalued
-          </li>
-          <li>
-          Formulate the risk profile of the MPI and choose interventions to adjust for the improvement of viability. 
-          </li>
-        </ol>
+
+
+        <Typography>
+        <Box>
+          <Box className="step" variant="subtitle2">Step 4</Box>
+          <Typography>Assess - based on answers to question 1 - in a different color the actual situation in the MPI by scores on the same scales at 3. </Typography>
+        </Box>
+        <Box>
+          <Box className="step" variant="subtitle2">Step 5</Box>
+          <Typography>Evaluate which of the viability components are over- or undervalued </Typography>
+        </Box>
+        <Box style={{marginBottom:"15px"}}>
+          <Box  className="step" variant="subtitle2">Step 6</Box>
+          <Typography>Formulate (see table below) the risk profile of the MPI and choose interventions to adjust for the improvement of viability. </Typography>
+        </Box>
         </Typography>
         
         <TableContainer component={Paper}>
@@ -373,15 +376,16 @@ const Step1 = (props) => {
         </TableContainer>
         
         <Typography variant="body1">
-        <ol start="8">
-          <li>
-          Conclude, if necessary, which adjustments must be made for viability including the necessary interventions.
-          </li>
-          <li>
-          Adjust the actual situation.
-          </li>
-          
-        </ol>
+       
+
+        <Box>
+          <Box className="step" variant="subtitle2">Step 5</Box>
+          <Typography>Conclude, if necessary, which adjustments must be made for viability including the necessary interventions. </Typography>
+        </Box>
+        <Box style={{marginBottom:"15px"}}>
+          <Box  className="step" variant="subtitle2">Step 6</Box>
+          <Typography>Adjust the actual situation. </Typography>
+        </Box>
         </Typography>
         </Typography>
       
