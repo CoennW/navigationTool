@@ -24,8 +24,6 @@ fieldset.likertScale {
    border-bottom: 1px solid rgb(219, 219, 219);
    margin: 0;
    padding: 1em 0;
-   
-    
 }
 
 fieldset.likertScale:last-child { 
@@ -36,4 +34,32 @@ fieldset.likertScale:last-child {
 fieldset.likertScale .likertBand {
   max-width: 60%;
 
+}
+
+fieldset.likertScale .likertIndicator {
+  border: 0px solid #e83946;
+  background-color: rgb(179, 179, 179);
+}
+
+fieldset.likertScale .likertResponse > input:checked + .likertIndicator {
+  background-color: #e83946;
+}
+
+
+
+.underline {
+  text-decoration: underline;
+}
+
+.step {
+  font-weight: 700;
+  font-size: 0.9em;
+  margin-top: 10px;
+}
+
+.ul_evaluation{
+  list-style-type: none;
+  margin: 0;
+  padding-top: 0em;
+  padding-left: 1.5em;
 }

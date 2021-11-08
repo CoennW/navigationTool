@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import {Box, Typography, Slider } from '@material-ui/core';
+import {Box, Typography, Slider, ListItem } from '@material-ui/core';
 import { Paper } from '@material-ui/core';
 import { useState } from 'react';
 import Likert from 'react-likert-scale';
 
+import {Table, TableBody, TableCell, TableContainer, TableHead, TableRow} from '@material-ui/core';
+import {List, ListItems} from '@material-ui/core';
 
 
 
@@ -35,6 +37,7 @@ const Step1 = (props) => {
       question: "Power position",
       onChange: val => {
         setSupport({...support, q1: val.value});
+        console.log('yes')
       }
     },
     q2: {
@@ -49,49 +52,49 @@ const Step1 = (props) => {
     q1: {
       question: "About technology",
       onChange: val => {
-        setSupport({...idea, q1: val.value});
+        setIdea({...idea, q1: val.value});
       }
     },
     q2: {
       question: "About fit with user values",
       onChange: val => {
-        setSupport({...idea, q2: val.value});
+        setIdea({...idea, q2: val.value});
       }
     },
     q3: {
       question: "About performance requirements",
       onChange: val => {
-        setSupport({...idea, q3: val.value});
+        setIdea({...idea, q3: val.value});
       }
     },
     q4: {
       question: "About risks (short/long term)",
       onChange: val => {
-        setSupport({...idea, q4: val.value});
+        setIdea({...idea, q4: val.value});
       }
     },
     q5: {
       question: "About attraction",
       onChange: val => {
-        setSupport({...idea, q5: val.value});
+        setIdea({...idea, q5: val.value});
       }
     },
     q6: {
       question: "About time to market",
       onChange: val => {
-        setSupport({...idea, q6: val.value});
+        setIdea({...idea, q6: val.value});
       }
     },
     q7: {
       question: "About knowledge unknowns",
       onChange: val => {
-        setSupport({...idea, q7: val.value});
+        setIdea({...idea, q7: val.value});
       }
     },
     q8: {
       question: "About form",
       onChange: val => {
-        setSupport({...idea, q8: val.value});
+        setIdea({...idea, q8: val.value});
       }
     }
   }
@@ -100,13 +103,13 @@ const Step1 = (props) => {
     q1: {
       question: "With admission criteria",
       onChange: val => {
-        setSupport({...objectives, q1: val.value});
+        setObjectives({...objectives, q1: val.value});
       }
     },
     q2: {
       question: "With long term intentions",
       onChange: val => {
-        setSupport({...objectives, q2: val.value});
+        setObjectives({...objectives, q2: val.value});
       }
     }
   }
@@ -115,19 +118,19 @@ const Step1 = (props) => {
     q1: {
       question: "Input of strengths",
       onChange: val => {
-        setSupport({...cooperation, q1: val.value});
+        setCooperation({...cooperation, q1: val.value});
       }
     },
     q2: {
       question: "Input of staff",
       onChange: val => {
-        setSupport({...cooperation, q2: val.value});
+        setCooperation({...cooperation, q2: val.value});
       }
     },
     q3: {
       question: "Ability for collaborative style",
       onChange: val => {
-        setSupport({...cooperation, q3: val.value});
+        setCooperation({...cooperation, q3: val.value});
       }
     }
   }
@@ -136,19 +139,19 @@ const Step1 = (props) => {
     q1: {
       question: "Level of structuring",
       onChange: val => {
-        setSupport({...coordination, q1: val.value});
+        setCoordination({...coordination, q1: val.value});
       }
     },
     q2: {
       question: "Presence of communication routines",
       onChange: val => {
-        setSupport({...coordination, q2: val.value});
+        setCoordination({...coordination, q2: val.value});
       }
     },
     q3: {
       question: "Clearness of planning",
       onChange: val => {
-        setSupport({...coordination, q3: val.value});
+        setCoordination({...coordination, q3: val.value});
       }
     }
   }
@@ -157,137 +160,229 @@ const Step1 = (props) => {
     q1: {
       question: "Architectural work packages",
       onChange: val => {
-        setSupport({...approach, q1: val.value});
+        setApproach({...approach, q1: val.value});
       }
     },
     q2: {
       question: "Modular work packages",
       onChange: val => {
-        setSupport({...approach, q2: val.value});
+        setApproach({...approach, q2: val.value});
       }
     }
   }
-
   
   const likertOptionsSpecialized = {
     q1: {
       question: "Continuity in personal relationships established",
       onChange: val => {
-        setSupport({...specialized, q1: val.value});
+        setSpecialized({...specialized, q1: val.value});
       }
     }
   }
 
+  useEffect(() => {
+    
+  }, [specialized])
 
+  function createData(name, risk) {
+    return { name, risk };
+  }
+
+  const getAvarage = obj => {
+    let heights = Object.entries(obj).map(el => el[1]);
+    var avg2 = heights.reduce((a,c) => a + c) / heights.length;
+    return avg2.toFixed(1);
+  }
+  
+  const rows = [
+    createData('Support risk: the will to provide resources proves to be low', support),
+    createData('Direction risk: parties harvest mainly driven by own objectives ', idea),
+    createData('Target group risk: users do not see a link of the idea with their lives ', objectives),
+    createData('Relational risk: parties avoid promises, claim to much, behave asymmetric', cooperation),
+    createData('Operational risk: unforeseen coordination costs/failures show up', coordination),
+    createData('Composability risk: it becomes difficult to make changes in work packages', approach),
+    createData('Orphan risk: a parent organization becomes not aligned', specialized)
+  ];
+  
 
 
 
     return (
-    
-      
     <Box mt={3} >
     <Paper  elevation={3} >
 
-      
-        <Box p={3}>
+    
+      <Box p={3}>
 
-          <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
+        <Box textAlign="left" fontSize="h4.fontSize" fontWeight="bold">
           Interim evaluation of the MPI
-          </Box>
-
+        </Box>
           
+        <Typography variant="body1">
+          Evaluate the actual status quo by:
+        <Box>
+          <Box className="step" variant="subtitle2">Step 1</Box>
+          <Typography>Making a consolidation of the MPI by collecting the latest results: decisions made, consolidations so far and intended actions.</Typography>
+        </Box>
+
+        <Box>
+          <Box className="step" variant="subtitle2">Step 2</Box>
+          <Typography>Asking individual participating keypersons of the MPI: </Typography>
+          <ul className="ul_evaluation">
+                <li>a) What is/are the <span class="underline">actual</span>  objective(s) of their currentactivities?</li> 
+                <li>b) What is/are desired outcomes of their <span class="underline">current</span> activities?</li>
+              </ul>
+        </Box>
+
+        <Box>
+          <Box className="step" variant="subtitle2">Step 3a</Box>
+          <Typography>Compare the individual answers of question 2a) with the two objectives of the Inception phase. </Typography>
+          <ul className="ul_evaluation">
+            <li>- to minimize the perceptual distance  between potential partners    
+                Individual position by assessing score of key-players: totally not driven by {"<"} 1     2      3      4       5 {">"} totally driven by
+            </li>
+            <li>- to maximize the chance for success with low toll for participants Individual position by assessing score of key-players: totally not driven by {"<"} 1     2      3      4       5 {">"} totally driven by
+            </li>
+              </ul>
+        </Box>
+
+        <Box>
+          <Box className="step" variant="subtitle2">Step 3b</Box>
+          <Typography>Compare the individual answers of question 2b) with the following pre-scripted outcomes of the Inception phase.  </Typography>
+        </Box>
+
+        
+        </Typography>
+
+
         <Typography variant="body1">
           Are respondents currently doing work for:
         </Typography>
+
 
       
 
         <Typography variant="body2">
 
 
-        <Box className="likert__group">
-          <Typography variant="subtitle2">
+        <Box component={Paper} className="likert__group">
+          <Box fontWeight="bold">
             A) Support: person or group in the parent organizations allows/helps the initiative to go on.
-          </Typography>
+          </Box>
 
           {Object.entries(likertOptionsSupport).map((item, i) => {
-            console.log(item)
-            return <Likert key={i} responses={responses} question={item[1].question} />}
+            return <Likert key={i} responses={responses} question={item[1].question} onChange={item[1].onChange} />}
             )}
-
         </Box>
 
-        <Box className="likert__group">
-          <Typography variant="subtitle2">
+        <Box component={Paper} className="likert__group">
+          <Box fontWeight="bold">
             B) The idea: the embryonal solution for a future business product or service (appearing as a drawing, a narrative, a mock-up, a protocept etc... 
-          </Typography>
+          </Box>
           
           {Object.entries(likertOptionsIdea).map((item, i) => {
-            console.log(item)
-            return <Likert key={i} responses={responses} question={item[1].question} />}
+            return <Likert key={i} responses={responses} question={item[1].question} onChange={item[1].onChange} />}
             )}
         </Box>
 
-        <Box className="likert__group">
-          <Typography variant="subtitle2">
+        <Box component={Paper} className="likert__group">
+        <Box fontWeight="bold">
             C) Fit with objectives: the link between the (characteristics) of the idea and the objectives of the participants. 
-          </Typography>
+            </Box>
           
           {Object.entries(likertOptionsObjectives).map((item, i) => {
-            console.log(item)
-            return <Likert key={i} responses={responses} question={item[1].question} />}
+            return <Likert key={i} responses={responses} question={item[1].question} onChange={item[1].onChange} />}
             )}
         </Box>
 
-        <Box className="likert__group">
-          <Typography variant="subtitle2">
+        <Box component={Paper} className="likert__group">
+        <Box fontWeight="bold">
           D) The cooperation in the next phase(s): the description of joint pursuit of agreed-on deliverables in a manner corresponding to a shared understanding about contributions and payoffs.   
-          </Typography>
-          
+          </Box>
+
           {Object.entries(likertOptionsCooperation).map((item, i) => {
-            console.log(item)
-            return <Likert key={i} responses={responses} question={item[1].question} />}
+            return <Likert key={i} responses={responses} question={item[1].question} onChange={item[1].onChange} />}
             )}
         </Box>
 
-        <Box className="likert__group">
-          <Typography variant="subtitle2">
-          e) The coordination of the next phase(s): the description of the deliberate and orderly alignment or adjustment of partners’ actions to achieve jointly determined deliverables.  
-          </Typography>
+        <Box component={Paper} className="likert__group">
+        <Box fontWeight="bold">
+          E) The coordination of the next phase(s): the description of the deliberate and orderly alignment or adjustment of partners’ actions to achieve jointly determined deliverables.  
+           </Box>
           
           {Object.entries(likertOptionsCoordination).map((item, i) => {
-            console.log(item)
-            return <Likert key={i} responses={responses} question={item[1].question} />}
+            return <Likert key={i} responses={responses} question={item[1].question} onChange={item[1].onChange} />}
             )}
         </Box>
 
-        <Box className="likert__group">
-          <Typography variant="subtitle2">
-          f) The approach for partitioning of work: the argued division of activities in architectural  or in modular  layout in the next phase(s). 
-          </Typography>
+        <Box component={Paper} className="likert__group">
+        <Box fontWeight="bold">
+          F) The approach for partitioning of work: the argued division of activities in architectural  or in modular  layout in the next phase(s). 
+          </Box>
           
           {Object.entries(likertOptionsApproach).map((item, i) => {
-            console.log(item)
-            return <Likert key={i} responses={responses} question={item[1].question} />}
+            return <Likert key={i} responses={responses} question={item[1].question} onChange={item[1].onChange} />}
             )}
         </Box>
 
-        <Box className="likert__group">
-          <Typography variant="subtitle2">
-          g) Specialized tasks for the integration with parent organizations: the arrangement for horizontal and vertical representation and communication by specialized persons. 
-          </Typography>
+        <Box component={Paper} className="likert__group">
+        <Box fontWeight="bold">
+          G) Specialized tasks for the integration with parent organizations: the arrangement for horizontal and vertical representation and communication by specialized persons. 
+          </Box>
           
           {Object.entries(likertOptionsSpecialized).map((item, i) => {
-            console.log(item)
-            return <Likert key={i} responses={responses} question={item[1].question} />}
+            return <Likert key={i} responses={responses} question={item[1].question} onChange={item[1].onChange} />}
             )}
         </Box>
-
-      
+        <Typography variant="body1">
+        <ol start="4">
+          <li>
+          Assess - based on answers to question 1 - in a different color the actual situation in the MPI by scores on the same scales at 3.
+          </li>
+          <li>
+          Evaluate which of the viability components are over- or undervalued
+          </li>
+          <li>
+          Formulate the risk profile of the MPI and choose interventions to adjust for the improvement of viability. 
+          </li>
+        </ol>
+        </Typography>
         
+        <TableContainer component={Paper}>
+          <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <TableHead>
+              <TableRow>
+                <TableCell>Risk factor</TableCell>
+                <TableCell align="right">Risk</TableCell>
+              </TableRow>
+            </TableHead>
+            <TableBody>
+              {rows.map((row) => (
+                <TableRow
+                  key={row.name}
+                  sx={{ '&:last-child td, &:last-child th': { border: 0 } }}
+                >
+                  <TableCell component="th" scope="row">
+                    {row.name}
+                  </TableCell>
+                  <TableCell align="right">{getAvarage(row.risk)}</TableCell>
+                </TableRow>
+              ))}
+            </TableBody>
+          </Table>
+        </TableContainer>
         
-        
-        
+        <Typography variant="body1">
+        <ol start="8">
+          <li>
+          Conclude, if necessary, which adjustments must be made for viability including the necessary interventions.
+          </li>
+          <li>
+          Adjust the actual situation.
+          </li>
+          
+        </ol>
+        </Typography>
         </Typography>
       
 
